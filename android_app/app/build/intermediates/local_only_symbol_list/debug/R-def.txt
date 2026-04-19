@@ -1,0 +1,12 @@
+R_DEF: Internal format may change without notice
+local
+id btnConnect
+id btnDisconnect
+id etPhoneName
+id etServerIP
+id scrollLog
+id tvLog
+id tvStats
+id tvStatus
+layout activity_main
+style AppTheme

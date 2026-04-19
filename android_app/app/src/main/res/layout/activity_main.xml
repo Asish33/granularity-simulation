@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#050810"
+    android:padding="16dp">
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Granularity Optimizer"
+        android:textColor="#00d4ff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:layout_marginBottom="2dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SRM University AP  |  Worker Node"
+        android:textColor="#4a6080"
+        android:textSize="11sp"
+        android:fontFamily="monospace"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Status Badge -->
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="● OFFLINE"
+        android:textColor="#ff6b35"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:background="#0c1120"
+        android:padding="12dp"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Server IP Input -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PC Server IP Address:"
+        android:textColor="#c8d8f0"
+        android:textSize="13sp"
+        android:fontFamily="monospace"
+        android:layout_marginBottom="4dp"/>
+
+    <EditText
+        android:id="@+id/etServerIP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="e.g. 192.168.1.100"
+        android:textColor="#c8d8f0"
+        android:textColorHint="#4a6080"
+        android:background="#0c1120"
+        android:padding="12dp"
+        android:fontFamily="monospace"
+        android:textSize="15sp"
+        android:inputType="textUri"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- Phone Name Input -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This Phone's Name:"
+        android:textColor="#c8d8f0"
+        android:textSize="13sp"
+        android:fontFamily="monospace"
+        android:layout_marginBottom="4dp"/>
+
+    <EditText
+        android:id="@+id/etPhoneName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="e.g. Akhil-Phone"
+        android:textColor="#c8d8f0"
+        android:textColorHint="#4a6080"
+        android:background="#0c1120"
+        android:padding="12dp"
+        android:fontFamily="monospace"
+        android:textSize="15sp"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="12dp">
+
+        <Button
+            android:id="@+id/btnConnect"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="▶  CONNECT"
+            android:textColor="#050810"
+            android:textStyle="bold"
+            android:fontFamily="monospace"
+            android:backgroundTint="#00d4ff"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/btnDisconnect"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="■  DISCONNECT"
+            android:textColor="#050810"
+            android:textStyle="bold"
+            android:fontFamily="monospace"
+            android:backgroundTint="#ff6b35"
+            android:enabled="false"/>
+    </LinearLayout>
+
+    <!-- Stats Bar -->
+    <TextView
+        android:id="@+id/tvStats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tasks Done: 0  |  Failed: 0  |  Avg Compute: —"
+        android:textColor="#7fff6e"
+        android:textSize="11sp"
+        android:fontFamily="monospace"
+        android:background="#0c1120"
+        android:padding="8dp"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Log -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ACTIVITY LOG"
+        android:textColor="#4a6080"
+        android:textSize="11sp"
+        android:fontFamily="monospace"
+        android:layout_marginBottom="4dp"/>
+
+    <ScrollView
+        android:id="@+id/scrollLog"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#0c1120">
+
+        <TextView
+            android:id="@+id/tvLog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#c8d8f0"
+            android:textSize="11sp"
+            android:fontFamily="monospace"
+            android:padding="10dp"
+            android:lineSpacingExtra="2dp"/>
+    </ScrollView>
+
+</LinearLayout>
